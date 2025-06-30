@@ -15,7 +15,6 @@
       margin: 0;
       padding: 0;
     }
-
     /* BASE */
     html { font-size: 16px; }
     body {
@@ -33,7 +32,6 @@
       margin: 0 auto;
       padding-bottom: 2rem;
     }
-
     /* TYPOGRAPHY */
     h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
     h2 { font-size: 1.5rem; color: #ccc; margin-bottom: 1.5rem; }
@@ -73,6 +71,37 @@
 </head>
 <body>
   <div class="container">
+    <!-- Logo SVG -->
+    <div style="text-align:center; margin-bottom:1rem;">
+      <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Face fills -->
+        <polygon points="100,180 20,40 100,90" fill="#b2b2fd"/>
+        <polygon points="20,40 180,40 100,90" fill="#feb3b3"/>
+        <polygon points="100,180 100,90 180,40" fill="#b6ffb2"/>
+
+        <!-- Wireframe -->
+        <polygon points="100,180 180,40 20,40"
+                 fill="none" stroke="black" stroke-width="3" />
+        <line x1="100" y1="180" x2="100" y2="90" stroke="black" stroke-width="3" />
+        <line x1="20"  y1="40"  x2="100" y2="90" stroke="black" stroke-width="3" />
+        <line x1="180" y1="40"  x2="100" y2="90" stroke="black" stroke-width="3" />
+
+        <!-- Letters in black -->
+        <text x="77" y="103.33" text-anchor="middle" dominant-baseline="middle" font-size="32"
+              fill="black" font-family="Georgia, serif">
+          S
+        </text>
+        <text x="100" y="66" text-anchor="middle" dominant-baseline="middle" font-size="32"
+              fill="black" font-family="Georgia, serif">
+          M
+        </text>
+        <text x="123" y="103.33" text-anchor="middle" dominant-baseline="middle" font-size="32"
+              fill="black" font-family="Georgia, serif">
+          C
+        </text>
+      </svg>
+    </div>
+
     <!-- Hero -->
     <header>
       <h1>Sound Mind Conservatory</h1>
